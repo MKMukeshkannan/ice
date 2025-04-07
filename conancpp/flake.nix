@@ -1,5 +1,5 @@
 {
-  description = "A Nix-flake-based C/C++ development environment";
+  description = "a new project with c++ and conan";
 
   inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*.tar.gz";
 
@@ -14,19 +14,18 @@
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell.override
           {
-            # Override stdenv in order to change compiler:
-            # stdenv = pkgs.clangStdenv;
+            stdenv = pkgs.clangStdenv;
           }
           {
             packages = with pkgs; [
               clang-tools
               cmake
               gnumake
-              # codespell
-              # conan
-              # cppcheck
+              conan
               doxygen
               gtest
+              # codespell
+              # cppcheck
               # lcov
               # vcpkg
               # vcpkg-tool
