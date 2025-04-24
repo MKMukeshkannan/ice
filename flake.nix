@@ -7,6 +7,10 @@
         path = ./myc;
         description = "simple c project";
       };
+      imgui = {
+        path = ./imgui;
+        description = "simple c project";
+      };
       conancpp = {
         path = ./conancpp;
         description = "simple cpp project, configured with conan";
