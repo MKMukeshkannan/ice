@@ -9,7 +9,11 @@
       };
       imgui = {
         path = ./imgui;
-        description = "simple c project";
+        description = "imgui scafolding with nix";
+      };
+      imgui-conan = {
+        path = ./imgui-conan;
+        description = "simple imgui project with conan";
       };
       opengl = {
         path = ./opengl;
