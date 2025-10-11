@@ -11,6 +11,10 @@
         path = ./imgui;
         description = "simple c project";
       };
+      opengl = {
+        path = ./opengl;
+        description = "opengl scafolding => glfw + glew + opengl + c++23";
+      };
       conancpp = {
         path = ./conancpp;
         description = "simple cpp project, configured with conan";
