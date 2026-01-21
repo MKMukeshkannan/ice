@@ -31,6 +31,10 @@
         path = ./raw;
         description = "simple cpp project, configured with conan";
       };
+      cpp23 = {
+        path = ./cpp23;
+        description = "simple cpp project, configured with nix + it uses c++23 btw";
+      };
     };
   };
 }
